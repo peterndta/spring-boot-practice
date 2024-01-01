@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Registration form</title>
+    <style>
+        .error {color:red}
+    </style>
+</head>
+<body>
+    <form th:action="@{/processForm}" th:object="${customer}" method="POST">
+        First Name: <input type="text" th:field="*{firstName}"/>
+        <br>
+        <br>
+        Last Name (*): <input type="text" th:field="*{lastName}"/>
+
+<!--  Add error message -->
+        <span th:if="${#fields.hasErrors('lastName')}"
+              th:errors="*{lastName}"
+              class="error"></span>
+        <br>
+
+        Free passes: <input type="text" th:field="*{freePasses}"/>
+        <!--  Add error message -->
+        <span th:if="${#fields.hasErrors('freePasses')}"
+              th:errors="*{freePasses}"
+              class="error"></span>
+        <br>
+        Postal Code: <input type="text" th:field="*{postalCode}"/>
+        <!--  Add error message -->
+        <span th:if="${#fields.hasErrors('postalCode')}"
+              th:errors="*{postalCode}"
+              class="error"></span>
+        <br>
+        <br>
+
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
