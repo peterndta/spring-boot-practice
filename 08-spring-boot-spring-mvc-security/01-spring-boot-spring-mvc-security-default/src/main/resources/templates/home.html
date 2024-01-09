@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Spring Security Demo Homepage</title>
@@ -7,6 +7,20 @@
 <body>
     <h2>Home Page Demo</h2>
     <hr>
-    Welcome to Home page
+    <p>
+        Welcome to Home page
+    </p>
+    <hr>
+<!--    Hiện user name và role-->
+    <p>
+        User: <span sec:authentication="principal.username"></span>
+        <br><br>
+        Role: <span sec:authentication="principal.authorities"></span>
+    </p>
+<!--Add a logout button-->
+    <form action="#" th:action="@{/logout}" method="POST">
+        <input type="submit" value="Logout" />
+    </form>
+
 </body>
 </html>
