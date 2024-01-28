@@ -1,6 +1,6 @@
 # Spring Boot 3 and Spring 6 Learning Repository
 
-Welcome to the Spring Boot 3 and Spring 6 Learning Repository! Here, you will find resources in Spring Boot 3 and Spring 6. [Spring Boot Study Note](https://docs.google.com/spreadsheets/d/1KNrP9_YD58q4zmPDt5HzPgen6dUhGXcB/edit?usp=sharing&ouid=104476243041902956452&rtpof=true&sd=true)
+Welcome to the Spring Boot 3 and Spring 6 Learning Repository! Here, you will find resources in Spring Boot 3 and Spring 6. [Spring Boot Study Note](https://docs.google.com/spreadsheets/d/1uow6ZGONyHag2_UZ8Tu5p_DsV7pgjSQI/edit?usp=drive_link&ouid=104476243041902956452&rtpof=true&sd=true)
 
 ## Table of Contents
 
